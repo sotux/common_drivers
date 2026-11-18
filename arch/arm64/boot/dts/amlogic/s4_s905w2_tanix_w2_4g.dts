@@ -1,0 +1,11 @@
+#include "s4_s905w2_tanix_w2_2g.dts"
+
+/ {
+	model = "Tanix W2 4G";
+	amlogic-dt-id = "s4_s905w2_4g";
+	coreelec-dt-id = "s4_s905w2_tanix_w2_4g";
+
+	memory@00000000 {
+		linux,usable-memory = <0x0 0x000000 0x0 0xe0000000>;
+	};
+};

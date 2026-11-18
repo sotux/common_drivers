@@ -1,0 +1,17 @@
+#include "s4_s905w2_2g.dts"
+
+/ {
+	model = "Tanix W2 2G";
+	amlogic-dt-id = "s4_s905w2_2g";
+	coreelec-dt-id = "s4_s905w2_tanix_w2_2g";
+};
+
+&ir_wakeup_key {
+	key_num = <1>;
+	wakeup_key = <0xb24d4040 IR_NORMAL KEY_POWER>;
+};
+
+/* The Tanix W2 android dump uses 200 MHz for the SD card interface */
+&sd_emmc_c {
+	max-frequency = <200000000>;
+};
